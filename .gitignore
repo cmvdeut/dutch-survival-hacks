@@ -1,4 +1,16 @@
-# Visual Studio bestanden
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.cursor/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Visual Studio
 .vs/
 [Bb]in/
 [Oo]bj/
@@ -6,11 +18,15 @@
 *.slnx
 *.user
 
-# Astro / Node bestanden
+# Node / Astro (if you add later)
 node_modules/
 dist/
 .astro/
 
-# OS bestanden
-.DS_Store
-Thumbs.db
+# Logs
+*.log
+npm-debug.log*
+
+# Local env
+.env
+.env.local

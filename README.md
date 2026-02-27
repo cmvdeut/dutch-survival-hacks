@@ -1,0 +1,33 @@
+# Dutch Survival Hacks
+
+**Positionering:** praktische informatie voor expats en internationale professionals in Nederland — administratie, fiscaal, cultuur en dagelijks leven.
+
+## Kanalen
+
+| Kanaal | URL |
+|--------|-----|
+| **TikTok** | [@dutchsurvivalhacks](https://www.tiktok.com/@dutchsurvivalhacks) |
+| **Hub** | WelkomNL — nieuwe site in `site/` (deploy naar Vercel); vervangt Canva (zie `docs/DEPLOY-VERCEL.md`) |
+
+## Doel
+
+- **TikTok:** korte, to-the-point content over onderwerpen die bij verhuizing en integratie spelen.
+- **WelkomNL:** overzicht en doorverwijzing naar betrouwbare bronnen; landingsplek na TikTok.
+
+## Structuur
+
+```
+DutchSurvivalHacks/
+├── README.md
+├── site/              landingspagina (deploy naar Vercel)
+├── content/           planning, ideeën, scripts
+├── assets/            visueel materiaal (optioneel)
+└── docs/              research, deploy-instructies
+```
+
+- **Branding:** `docs/BRANDING.md`  
+- **Logo-concept (tekst + figuur):** `docs/LOGO-CONCEPT.md`  
+- **Strategie en prioriteiten:** `content/PLAN.md`  
+- **Copy gids-downloadpagina:** `content/GUIDE-DOWNLOAD-COPY.md`  
+- **TikTok-bio en profiel:** `content/TIKTOK-BIO.md`  
+- **Gids-pagina (live):** `site/guide.html` — link vanaf homepage naar deze pagina
