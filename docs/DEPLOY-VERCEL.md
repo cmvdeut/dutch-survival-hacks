@@ -18,7 +18,7 @@ git commit -m "Initial commit: site + content plan"
 Maak op [github.com](https://github.com) een nieuw repository met de naam **dutch-survival-hacks** (of koppel een bestaande) en koppel het:
 
 ```bash
-git remote add origin https://github.com/JOUW-GEBRUIKERSNAAM/dutch-survival-hacks.git
+git remote add origin https://github.com/dutchsurvivalhacks/dutch-survival-hacks.git
 git branch -M main
 git push -u origin main
 ```
