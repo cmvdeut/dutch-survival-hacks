@@ -7,7 +7,7 @@
 | Kanaal | URL |
 |--------|-----|
 | **TikTok** | [@dutchsurvivalhacks](https://www.tiktok.com/@dutchsurvivalhacks) |
-| **Hub** | WelkomNL — nieuwe site in `site/` (deploy naar Vercel); vervangt Canva (zie `docs/DEPLOY-VERCEL.md`) |
+| **Hub** | [dutchsurvivalhacks.seniorease.eu](https://dutchsurvivalhacks.seniorease.eu) — site in `site/`, deploy via Vercel (zie `docs/DEPLOY-VERCEL.md`) |
 
 ## Doel
 
