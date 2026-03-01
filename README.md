@@ -30,5 +30,6 @@ DutchSurvivalHacks/
 - **Strategie en prioriteiten:** `content/PLAN.md`  
 - **Copy gids-downloadpagina:** `content/GUIDE-DOWNLOAD-COPY.md`  
 - **Gids-formulier koppelen:** `docs/GUIDE-FORM-SETUP.md` (Formspree / Mailchimp / ConvertKit)  
+- **Checklist-PDF + Formspree:** `docs/CHECKLIST-PDF-AUTOMATION.md` (PDF maken, hosten, autoresponder met link)  
 - **TikTok-bio en profiel:** `content/TIKTOK-BIO.md`  
 - **Gids-pagina:** `site/guide.html` — formulier + bedankpagina `site/guide-thank-you.html`
