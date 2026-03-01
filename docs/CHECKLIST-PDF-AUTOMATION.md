@@ -1,6 +1,6 @@
-# Checklist-PDF: maken en automatisch versturen via Formspree
+# Checklist-PDF: maken en automatisch versturen
 
-Zodra iemand het gids-formulier invult, kunnen ze de checklist als PDF krijgen via een **Formspree-autoresponder** met een downloadlink. Formspree stuurt geen bestanden mee; je host de PDF op je site en linkt ernaar in de e-mail.
+Het gids-formulier gebruikt **Formspree**. Via de **Formspree-autoresponder** stuur je automatisch een e-mail met een link naar de checklist-PDF naar iedereen die het formulier invult.
 
 ---
 
@@ -13,7 +13,7 @@ De inhoud staat in **content/checklist-pdf.md** en als printbare pagina in **sit
 1. Open **site/assets/checklist.html** in Chrome of Edge.
 2. **Ctrl+P** (of Cmd+P op Mac) → **Bestemming:** "Opslaan als PDF" / "Save as PDF".
 3. Sla op als **checklist.pdf** in de map **site/assets/**.
-4. Controleer dat het bestand heet: `site/assets/checklist.pdf`.
+4. Controleer dat het bestand heet: **site/assets/checklist.pdf**.
 
 ### Optie B — Pandoc (command line)
 
@@ -23,8 +23,6 @@ Als je [Pandoc](https://pandoc.org/) hebt geïnstalleerd:
 cd d:\MAUREEN\DEV\DutchSurvivalHacks
 pandoc content/checklist-pdf.md -o site/assets/checklist.pdf
 ```
-
-(Eventueel eerst: `pandoc content/checklist-pdf.md -o site/assets/checklist.html` en dan vanuit de browser naar PDF printen voor betere opmaak.)
 
 ---
 
@@ -48,28 +46,28 @@ Test die URL in je browser; als de PDF opent, is stap 2 klaar.
 
 ---
 
-## Stap 3: Formspree-autoresponder instellen
+## Stap 3: Formspree-autoresponder met PDF-link
 
-Formspree stuurt automatisch een e-mail naar het adres dat in het formulier is ingevuld. In die e-mail zet je een link naar de PDF.
+Formspree kan automatisch een e-mail naar de inzender sturen. Daarin zet je de link naar de PDF.
 
-1. Log in op **[formspree.io](https://formspree.io)** en open het formulier dat hoort bij **xvzbnbln**.
-2. Ga naar **Settings** (of **Form settings**) → **Notifications** / **Autoresponder**.
-3. Zet de **Autoresponder** aan (email naar de inzender).
-4. Stel in:
+1. Log in op **[formspree.io](https://formspree.io)** en open het formulier (ID xvzbnbln).
+2. Ga naar **Settings** → **Notifications** / **Autoresponder** (of **Workflow** → Email action naar inzender).
+3. Zet de **Autoresponder** aan (e-mail naar het adres dat in het formulier is ingevuld).
+4. Vul in:
    - **Subject:** bijv. `Your checklist — Dutch Survival Hacks`
-   - **Message** (tekst of HTML), bijvoorbeeld:
+   - **Message**, bijvoorbeeld:
 
 ```
 Thanks for signing up. Here's your checklist for your first 30 days in the Netherlands:
 
 Download the PDF: https://dutchsurvivalhacks.seniorease.eu/assets/checklist.pdf
 
-If the link doesn't work, copy and paste it into your browser. You'll get more tips on our site and on TikTok @dutchsurvivalhacks.
+If the link doesn't work, copy and paste it into your browser. More tips on our site and TikTok @dutchsurvivalhacks.
 
 — Dutch Survival Hacks
 ```
 
-5. Sla op. Nieuwe inzendingen krijgen nu direct een e-mail met de link naar de PDF.
+5. Sla op. Nieuwe inzendingen krijgen dan automatisch een e-mail met de PDF-link.
 
 ---
 
@@ -77,8 +75,19 @@ If the link doesn't work, copy and paste it into your browser. You'll get more t
 
 | Stap | Wat |
 |------|-----|
-| 1 | **site/assets/checklist.html** in browser openen → Print → Opslaan als PDF → opslaan als **site/assets/checklist.pdf** |
-| 2 | **checklist.pdf** committen en pushen → URL: **https://dutchsurvivalhacks.seniorease.eu/assets/checklist.pdf** |
-| 3 | In Formspree: **Autoresponder** aanzetten en in de e-mail de link naar de PDF zetten |
+| 1 | **site/assets/checklist.html** in browser openen → Print → Opslaan als PDF → **site/assets/checklist.pdf** |
+| 2 | **checklist.pdf** committen en pushen → live op **https://dutchsurvivalhacks.seniorease.eu/assets/checklist.pdf** |
+| 3 | In Formspree: **Autoresponder** “aanzetten” en in de e-mail de link naar de PDF zetten |
 
-Daarna krijgt iedereen die het formulier invult automatisch een e-mail met de downloadlink.
+Daarna krijgt iedereen die het formulier invult automatisch een welkomstmail met de downloadlink.
+
+---
+
+## Geen betaald Formspree-plan: checklist via bedankpagina
+
+De **custom redirect** (Response) en **Autoresponder** (e-mail naar inzender) zijn bij Formspree betaalde opties. Je hoeft niet te upgraden.
+
+**Hoe het nu werkt (gratis):**  
+Na het invullen van het formulier stuurt Formspree de bezoeker door naar de **bedankpagina** (via het verborgen veld `_next` in het formulier). Op die pagina staat een knop **Download the checklist (PDF)**. De bezoeker krijgt de checklist dus direct op de volgende pagina, zonder e-mail. Jij ontvangt wel een melding van Formspree dat er een nieuwe inzending is (op het e-mailadres dat aan je Formspree-account gekoppeld is).
+
+De teksten op de gids-pagina zijn daarop aangepast: "Enter your email and click the button — you'll land on a page where you can download the PDF straight away." Geen belofte van een e-mail, wel duidelijke levering via de downloadknop op de bedankpagina.
