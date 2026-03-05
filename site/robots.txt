@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dutchsurvivalhacks.seniorease.eu/sitemap.xml
