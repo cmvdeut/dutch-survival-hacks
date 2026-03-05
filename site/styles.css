@@ -480,6 +480,20 @@ body {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.card-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .article-meta {
   font-size: 0.85rem;
   color: var(--color-muted);
