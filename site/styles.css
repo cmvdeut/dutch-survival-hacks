@@ -360,6 +360,13 @@ body {
   margin: 0 0 0.2rem;
 }
 
+.header-logo {
+  display: block;
+  height: 110px;
+  width: auto;
+  margin-bottom: 0.75rem;
+}
+
 .guide-hero {
   padding: 2.5rem 0 2rem;
 }
