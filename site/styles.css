@@ -50,9 +50,20 @@ body {
 
 /* Header — navy background, branded */
 .header {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   background: var(--color-primary);
   border-bottom: none;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .header h1 {
@@ -362,9 +373,9 @@ body {
 
 .header-logo {
   display: block;
-  height: 110px;
+  height: 90px;
   width: auto;
-  margin-bottom: 0.75rem;
+  flex-shrink: 0;
 }
 
 .guide-hero {
