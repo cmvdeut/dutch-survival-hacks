@@ -66,12 +66,17 @@ body {
   flex-direction: column;
 }
 
-.header h1 {
+.header h1,
+.header .site-title {
   margin: 0 0 0.2rem;
   font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: #fff;
+}
+
+.header .site-title {
+  display: block;
 }
 
 .tagline {

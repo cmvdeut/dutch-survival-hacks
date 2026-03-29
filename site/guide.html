@@ -21,7 +21,7 @@
     <div class="container">
       <a href="index.html" class="logo-link"><img src="assets/logo.png" alt="Dutch Survival Hacks" class="header-logo" /></a>
       <div class="header-text">
-        <a href="index.html" class="logo-link"><h1>Dutch Survival Hacks</h1></a>
+        <a href="index.html" class="logo-link"><span class="site-title">Dutch Survival Hacks</span></a>
         <p class="tagline">Expat Survival Guide for the Netherlands</p>
         <a href="https://www.tiktok.com/@dutchsurvivalhacks" class="cta cta-secondary" target="_blank" rel="noopener">Follow on TikTok</a>
       </div>
@@ -30,7 +30,7 @@
 
   <main class="main">
     <section class="guide-hero container">
-      <h2 class="guide-title">Your first 30 days in the Netherlands — here’s the plan</h2>
+      <h1 class="guide-title">Your first 30 days in the Netherlands — here’s the plan</h1>
       <p class="guide-intro">
         Moving to the Netherlands comes with a to-do list nobody warned you about. BSN, DigiD, gemeente, zorgverzekering — it’s a lot, and doing it in the wrong order makes things worse. This checklist tells you exactly what to sort first.
       </p>
@@ -49,8 +49,13 @@
     <section class="guide-cta-section">
       <div class="container">
         <h3 class="guide-cta-title">Get the checklist</h3>
-        <p class="guide-cta-text">Free to download — no sign-up needed.</p>
-        <a href="assets/checklist.pdf" download class="cta cta-primary">Download the checklist (PDF)</a>
+        <p class="guide-cta-text">Enter your email — we'll send you the link and keep you posted when things change.</p>
+        <form class="newsletter-form" action="https://formspree.io/f/xvzbnbln" method="post">
+          <input type="hidden" name="_next" value="https://dutchsurvivalhacks.seniorease.eu/guide-thank-you.html" />
+          <input type="hidden" name="_subject" value="New checklist download" />
+          <input type="email" name="email" required placeholder="your@email.com" aria-label="Email address" />
+          <button type="submit" class="cta cta-primary">Send me the checklist</button>
+        </form>
       </div>
     </section>
 
