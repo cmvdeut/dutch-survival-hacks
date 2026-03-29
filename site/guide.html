@@ -14,6 +14,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://dutchsurvivalhacks.seniorease.eu/assets/logo.png" />
   <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="canonical" href="https://dutchsurvivalhacks.seniorease.eu/guide.html" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -46,11 +47,11 @@
       <p class="guide-intro guide-note">No filler. Just the stuff that actually matters in your first weeks here.</p>
     </section>
 
-    <section class="guide-cta-section">
+    <section class="guide-cta-section" id="checklist">
       <div class="container">
         <h3 class="guide-cta-title">Get the checklist</h3>
-        <p class="guide-cta-text">Enter your email — we'll send you the link and keep you posted when things change.</p>
-        <form class="newsletter-form" action="https://formspree.io/f/xvzbnbln" method="post">
+        <p class="guide-cta-text">Enter your email, then download the PDF on the next screen — instant, no waiting for your inbox. We'll use your email only for occasional updates when Dutch rules change.</p>
+        <form class="guide-form" action="https://formspree.io/f/xvzbnbln" method="post">
           <input type="hidden" name="_next" value="https://dutchsurvivalhacks.seniorease.eu/guide-thank-you.html" />
           <input type="hidden" name="_subject" value="New checklist download" />
           <input type="email" name="email" required placeholder="your@email.com" aria-label="Email address" />
@@ -78,9 +79,12 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-links">
+      <a href="about.html">About</a>
+      <span class="footer-sep" aria-hidden="true">·</span>
       <a href="https://www.tiktok.com/@dutchsurvivalhacks" target="_blank" rel="noopener">TikTok @dutchsurvivalhacks</a>
     </div>
   </footer>
+  <script src="/formspree-forms.js" defer></script>
 </body>
 </html>

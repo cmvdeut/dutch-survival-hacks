@@ -11,6 +11,7 @@ Tone: informal but professional — "helpful insider". Site language: English.
 site/
   index.html                        — homepage
   guide.html                        — guide/checklist page
+  about.html                        — about the site / who runs it
   guide-thank-you.html
   newsletter-thank-you.html
   styles.css                        — all styling (single stylesheet)
@@ -28,6 +29,7 @@ site/
   finding-rental-netherlands-expat.html
   dutch-public-holidays-calendar.html
   schools-childcare-netherlands-expat.html
+  formspree-forms.js                — AJAX submit for Formspree (skips localized hosted thank-you page)
 
 tiktok-videos/                      — Remotion project for TikTok video templates
   src/Root.tsx                      — registers TipVideo and ListVideo compositions
@@ -47,7 +49,7 @@ tiktok-videos/                      — Remotion project for TikTok video templa
 - Pure static HTML + CSS — no build step, no framework
 - Single `styles.css` for all pages — do not create per-page stylesheets
 - Every page must include: favicon, og:image, consistent header with logo, consistent footer
-- Do not add JavaScript unless explicitly asked
+- Do not add JavaScript unless explicitly asked (exception: `formspree-forms.js` on `index.html` and `guide.html` for English-only post-submit flow)
 - Keep HTML semantic and accessible
 
 ## TikTok / Remotion
